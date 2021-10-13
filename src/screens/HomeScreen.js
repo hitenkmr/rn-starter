@@ -16,9 +16,9 @@ const HomeScreen = (props) => {
       style={styles.componentsBtn} color='white'
     />
 
-    <TouchableOpacity onPress={this.onPressFlatListBtn}>
-      <Text style={styles.listBtn}>Go to List Demo</Text>
-    </TouchableOpacity>
+    <Button title='Click for List Screen' onPress={this.onPressFlatListBtn}
+      style={styles.componentsBtn} color='white'
+    />
 
   </View>
 
@@ -32,12 +32,12 @@ const styles = StyleSheet.create({
 
   componentsBtn: {
     fontSize: 20
-    },
+  },
 
   listBtn: {
     fontSize: 20,
-    backgroundColor:'red',
-    textAlign:'center'
+    backgroundColor: 'red',
+    textAlign: 'center'
   }
 });
 
