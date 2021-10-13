@@ -13,7 +13,7 @@ const navigator = createStackNavigator(
     SectionedList: SectionListScreen
   },
   {
-    initialRouteName: "SectionedList",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "App",
     },

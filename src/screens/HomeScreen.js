@@ -1,31 +1,43 @@
 import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { Button, Text, StyleSheet, View, TouchableOpacity } from "react-native";
 
-const HomeScreen = () => {
-  const greeting='Hi there!'
-  // const fullNameGreetingText=<Text style={styles.text}>Hi Hiten kumar!</Text>
-  // const sirNameGreetingText=<Text style={styles.text}>Hi kumar!</Text>
-  // const firstView = <View>
-  //                         <Text style={styles.text}>{greeting}</Text>
-  //                         {showFullName ? fullNameGreetingText : sirNameGreetingText}
-  //                   </View>
-  
-  const name='Hitender Kumar'
+const HomeScreen = (props) => {
+
+  const greeting = 'Hi there!'
+  const name = 'Hitender Kumar'
   const showFullName = false
 
-  return <View>
-    <Text style={styles.title}>Greeting started with react native!</Text>
-    <Text style={styles.subtitle}>My name is {name}</Text>
+  onPressComponentsBtn = () => { props.navigation.push('Components') }
+  onPressFlatListBtn = () => { props.navigation.push('FlatList') }
+
+  return <View style={styles.container}>
+
+    <Button title='Click for Components Screen' onPress={this.onPressComponentsBtn}
+      style={styles.componentsBtn} color='white'
+    />
+
+    <TouchableOpacity onPress={this.onPressFlatListBtn}>
+      <Text style={styles.listBtn}>Go to List Demo</Text>
+    </TouchableOpacity>
+
   </View>
 
 };
 
 const styles = StyleSheet.create({
-  title: {
-    fontSize: 45
+  container: {
+    padding: 20,
+    backgroundColor: 'gray'
   },
-  subtitle: {
+
+  componentsBtn: {
     fontSize: 20
+    },
+
+  listBtn: {
+    fontSize: 20,
+    backgroundColor:'red',
+    textAlign:'center'
   }
 });
 

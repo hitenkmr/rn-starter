@@ -11,6 +11,7 @@ class ComponentsScreen extends React.Component {
       this.setState({
         buttonTitle: "Coulibly"
       });
+      this.props.navigation.pop()
     };
     
       render() {
