@@ -9,6 +9,7 @@ const HomeScreen = ({ navigation }) => {
 
   onPressComponentsBtn = () => { navigation.push('Components') }
   onPressFlatListBtn = () => { navigation.push('FlatList') }
+  onPressImageScreenBtn = () => { navigation.push('Image') }
 
   return <View style={styles.container}>
 
@@ -17,6 +18,11 @@ const HomeScreen = ({ navigation }) => {
     />
 
     <Button title='Click for List Screen' onPress={this.onPressFlatListBtn}
+      style={styles.componentsBtn} color='white'
+    />
+
+
+    <Button title='Click for Image Screen' onPress={this.onPressImageScreenBtn}
       style={styles.componentsBtn} color='white'
     />
 
