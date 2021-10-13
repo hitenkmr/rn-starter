@@ -1,14 +1,14 @@
 import React from "react";
 import { Button, Text, StyleSheet, View, TouchableOpacity } from "react-native";
 
-const HomeScreen = (props) => {
+const HomeScreen = ({ navigation }) => {
 
   const greeting = 'Hi there!'
   const name = 'Hitender Kumar'
   const showFullName = false
 
-  onPressComponentsBtn = () => { props.navigation.push('Components') }
-  onPressFlatListBtn = () => { props.navigation.push('FlatList') }
+  onPressComponentsBtn = () => { navigation.push('Components') }
+  onPressFlatListBtn = () => { navigation.push('FlatList') }
 
   return <View style={styles.container}>
 
