@@ -2,7 +2,7 @@ import React from "react";
 import {View, Text, StyleSheet } from 'react-native';
 import { FlatList } from "react-native-gesture-handler";
 
- const ListScreen = () =>   {
+ const FlatListScreen = () =>   {
 	 const friends = [
 	 {name:'Friend#1', age: 21}, 
 	 {name:'Friend#2', age: 21},
@@ -38,4 +38,4 @@ const styles = StyleSheet.create({
     },
 });
   
-export default ListScreen;
+export default FlatListScreen;
