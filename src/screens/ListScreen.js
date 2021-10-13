@@ -28,7 +28,8 @@ import { FlatList } from "react-native-gesture-handler";
 
 const styles = StyleSheet.create({
     item: {
-      padding: 20,
+		marginLeft: 20,
+		marginVertical: 5,
       fontSize: 18,
       height: 44,
     },
