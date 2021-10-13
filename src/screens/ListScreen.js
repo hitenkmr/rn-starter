@@ -17,6 +17,7 @@ import { FlatList } from "react-native-gesture-handler";
 
     return(
 	     <FlatList 
+		       keyExtractor={ friend => friend.name }
              data={friends} 
              renderItem={ ( { item } ) => {
 					 return <Text style= {styles.item}>{item.name}</Text>
