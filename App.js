@@ -8,6 +8,7 @@ import ImageScreen from "./src/screens/ImageScreen";
 import FlexBoxExamplesScreen from "./src/FlexBoxExamples/FlexBoxExamplesScreen";
 import FlexUsesScreen from "./src/FlexBoxExamples/FlexUsesScreen";
 import FlexDirecionUsagesScreen from "./src/FlexBoxExamples/FlexDirectionUsagesScreen";
+import DirectionUsesScreen from "./src/FlexBoxExamples/DirectionUsesScreen";
 
 const navigator = createStackNavigator(
   {
@@ -18,7 +19,8 @@ const navigator = createStackNavigator(
     Image: ImageScreen,
     FlexBoxExScreen: FlexBoxExamplesScreen,
     AppFlexUsesScreen: FlexUsesScreen,
-    AppFleDirectionUsagesScreen: FlexDirecionUsagesScreen
+    AppFleDirectionUsagesScreen: FlexDirecionUsagesScreen,
+    DirectionUsesScreen: DirectionUsesScreen
   },
   {
     initialRouteName: "Home",

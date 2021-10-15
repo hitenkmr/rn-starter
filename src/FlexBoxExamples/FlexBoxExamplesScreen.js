@@ -5,6 +5,7 @@ const FlexBoxExamplesScreen = ({ navigation }) => {
 
     onFlexPressBtn = () => { navigation.push('AppFlexUsesScreen') }
     onFlexDirectionPressBtn = () => { navigation.push('AppFleDirectionUsagesScreen') }
+    onDirectionPressBtn = () => { navigation.push('DirectionUsesScreen') }
 
     return (
         <View style={styles.container}>
@@ -16,6 +17,11 @@ const FlexBoxExamplesScreen = ({ navigation }) => {
             <Button title='flex Direction' onPress={this.onFlexDirectionPressBtn}
                 style={styles.componentsBtn} color='white'
             />
+
+            <Button title='direction' onPress={this.onDirectionPressBtn}
+                style={styles.componentsBtn} color='white'
+            />
+
 
         </View>
     );
