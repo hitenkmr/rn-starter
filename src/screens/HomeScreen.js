@@ -11,6 +11,7 @@ const HomeScreen = ({ navigation }) => {
   onPressFlatListBtn = () => { navigation.push('FlatList') }
   onPressImageScreenBtn = () => { navigation.push('Image') }
   onPressFlexBoxBtn = () => { navigation.push('FlexBoxExScreen') }
+  onPressCounterBtn = () => { navigation.push('AppCounterScreen') }
 
   return <View style={styles.container}>
 
@@ -28,6 +29,10 @@ const HomeScreen = ({ navigation }) => {
     />
 
     <Button title='Flexbox Examples' onPress={this.onPressFlexBoxBtn}
+      style={styles.componentsBtn} color='white'
+    />
+
+    <Button title='Counter' onPress={this.onPressCounterBtn}
       style={styles.componentsBtn} color='white'
     />
 
