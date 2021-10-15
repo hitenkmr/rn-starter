@@ -5,6 +5,8 @@ import ComponentsScreen from "./src/screens/ComponentsScreen";
 import FlatListScreen from "./src/screens/FlatListScreen";
 import SectionListScreen from "./src/screens/SectionListScreen";
 import ImageScreen from "./src/screens/ImageScreen";
+import FlexBoxExamplesScreen from "./src/FlexBoxExamples/FlexBoxExamplesScreen";
+import FlexUsesScreen from "./src/FlexBoxExamples/FlexUsesScreen";
 
 const navigator = createStackNavigator(
   {
@@ -12,7 +14,9 @@ const navigator = createStackNavigator(
     Components: ComponentsScreen,
     FlatList: FlatListScreen,
     SectionedList: SectionListScreen,
-    Image: ImageScreen
+    Image: ImageScreen,
+    FlexBoxExScreen: FlexBoxExamplesScreen,
+    AppFlexUsesScreen: FlexUsesScreen
   },
   {
     initialRouteName: "Home",

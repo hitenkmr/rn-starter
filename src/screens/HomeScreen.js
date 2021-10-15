@@ -10,6 +10,7 @@ const HomeScreen = ({ navigation }) => {
   onPressComponentsBtn = () => { navigation.push('Components') }
   onPressFlatListBtn = () => { navigation.push('FlatList') }
   onPressImageScreenBtn = () => { navigation.push('Image') }
+  onPressFlexBoxBtn = () => { navigation.push('FlexBoxExScreen') }
 
   return <View style={styles.container}>
 
@@ -23,6 +24,10 @@ const HomeScreen = ({ navigation }) => {
 
 
     <Button title='Click for Image Screen' onPress={this.onPressImageScreenBtn}
+      style={styles.componentsBtn} color='white'
+    />
+
+    <Button title='Flexbox Examples' onPress={this.onPressFlexBoxBtn}
       style={styles.componentsBtn} color='white'
     />
 
