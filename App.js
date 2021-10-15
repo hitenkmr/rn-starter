@@ -7,6 +7,7 @@ import SectionListScreen from "./src/screens/SectionListScreen";
 import ImageScreen from "./src/screens/ImageScreen";
 import FlexBoxExamplesScreen from "./src/FlexBoxExamples/FlexBoxExamplesScreen";
 import FlexUsesScreen from "./src/FlexBoxExamples/FlexUsesScreen";
+import FlexDirecionUsagesScreen from "./src/FlexBoxExamples/FlexDirectionUsagesScreen";
 
 const navigator = createStackNavigator(
   {
@@ -16,7 +17,8 @@ const navigator = createStackNavigator(
     SectionedList: SectionListScreen,
     Image: ImageScreen,
     FlexBoxExScreen: FlexBoxExamplesScreen,
-    AppFlexUsesScreen: FlexUsesScreen
+    AppFlexUsesScreen: FlexUsesScreen,
+    AppFleDirectionUsagesScreen: FlexDirecionUsagesScreen
   },
   {
     initialRouteName: "Home",

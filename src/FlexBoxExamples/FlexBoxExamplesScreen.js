@@ -3,12 +3,17 @@ import { Button, Text, StyleSheet, View, TouchableOpacity } from "react-native";
 
 const FlexBoxExamplesScreen = ({ navigation }) => {
 
-    onPressBtn = () => { navigation.push('AppFlexUsesScreen') }
+    onFlexPressBtn = () => { navigation.push('AppFlexUsesScreen') }
+    onFlexDirectionPressBtn = () => { navigation.push('AppFleDirectionUsagesScreen') }
 
     return (
         <View style={styles.container}>
 
-            <Button title='flex' onPress={this.onPressBtn}
+            <Button title='flex' onPress={this.onFlexPressBtn}
+                style={styles.componentsBtn} color='white'
+            />
+
+            <Button title='flex Direction' onPress={this.onFlexDirectionPressBtn}
                 style={styles.componentsBtn} color='white'
             />
 
