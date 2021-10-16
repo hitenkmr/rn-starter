@@ -41,6 +41,10 @@ const HomeScreen = ({ navigation }) => {
       style={styles.componentsBtn} color='white'
     />
 
+    <Button title='Square screen' onPress={ () => navigation.push('AppSquareScreen') }
+      style={styles.componentsBtn} color='white'
+    />
+
   </View>
 
 };
