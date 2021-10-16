@@ -15,23 +15,29 @@ const SquareScreen = () => {
     console.log(blue)
     console.log(green)
 
+    const checkAndUpdateColor = (updatedColor, setColor) => {
+        if (updatedColor > 255 || updatedColor < 0) { return }
+        setColor(updatedColor)
+    };
+
     return (
         <View>
             <ColorCounter
-                onMore={() => { setRed(red >= 255 ? red : red + COLOR_INCREMENT) }}
-                onLess={() => { setRed(red <= 0 ? red : red - COLOR_DECREMENT) }}
+                onMore={() => { checkAndUpdateColor(red + COLOR_INCREMENT, setRed) }}
+                onLess={() => { checkAndUpdateColor(red - COLOR_DECREMENT, setRed) }}
                 colorName='Red'>
             </ColorCounter>
 
             <ColorCounter
-                onMore={() => { setBlue(blue >= 255 ? blue : blue + COLOR_INCREMENT) }}
-                onLess={() => { setBlue(blue <= 0 ? blue : blue - COLOR_DECREMENT) }}
+                onMore={() => { checkAndUpdateColor(blue + COLOR_INCREMENT, setBlue) }}
+                onLess={() => { checkAndUpdateColor(blue - COLOR_DECREMENT, setBlue) }}
                 colorName='Blue'>
             </ColorCounter>
 
             <ColorCounter
-                onMore={() => { setGreen(green >= 255 ? green : green + COLOR_INCREMENT) }}
-                onLess={() => { setGreen(green <= 0 ? green : green - COLOR_DECREMENT) }} colorName='Green'>
+                onMore={() => { checkAndUpdateColor(green + COLOR_INCREMENT, setGreen) }}
+                onLess={() => { checkAndUpdateColor(green - COLOR_DECREMENT, setGreen) }}
+                colorName='Green'>
             </ColorCounter>
 
             <View
