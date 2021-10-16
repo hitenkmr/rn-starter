@@ -12,6 +12,7 @@ const HomeScreen = ({ navigation }) => {
   onPressImageScreenBtn = () => { navigation.push('Image') }
   onPressFlexBoxBtn = () => { navigation.push('FlexBoxExScreen') }
   onPressCounterBtn = () => { navigation.push('AppCounterScreen') }
+  onPressColorBtn = () => { navigation.push('AppColorScreen') }
 
   return <View style={styles.container}>
 
@@ -33,6 +34,10 @@ const HomeScreen = ({ navigation }) => {
     />
 
     <Button title='Counter' onPress={this.onPressCounterBtn}
+      style={styles.componentsBtn} color='white'
+    />
+
+    <Button title='Color screen' onPress={this.onPressColorBtn}
       style={styles.componentsBtn} color='white'
     />
 
