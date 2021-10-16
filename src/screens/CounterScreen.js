@@ -2,13 +2,13 @@ import React, { useReducer } from "react";
 import { Text, Button, View, StyleSheet } from "react-native";
 
 const reducer = (state, action) => {
-
-    return (state + action.amount >= 0) ? (state + action.amount) : state
+    return (state.count + action.amount >= 0) ? {...state, count: state.count + action.amount} : state
 };
 
 const CounterScreen = () =>  {
 
-   const [state, dispatch] = useReducer(reducer, 0);
+   const [state, dispatch] = useReducer(reducer, {count: 0});
+   const {count} = state
 
     return(
         <View style={styles.container}>
@@ -21,7 +21,7 @@ const CounterScreen = () =>  {
                 style={styles.componentsBtn} color='white'
             />
 
-            <Text> Current value is: {state} </Text>
+            <Text> Current value is: {count} </Text>
 
         </View>
     );
