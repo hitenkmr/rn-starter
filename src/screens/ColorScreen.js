@@ -1,12 +1,26 @@
 import React, { useState } from "react";
-import { Text, Button, View, StyleSheet } from "react-native";
+import { Text, Button, View, StyleSheet, FlatList } from "react-native";
+import { color } from "react-native-reanimated";
 
 const ColorScreen = () => {
 
+    const [colors, setColors] = useState([]);
+
+    console.log(colors)
+
     return (
         <View>
-            <Button title='Add a color' />
-            <View style={{ width: 100, height: 100, backgroundColor: randomRGB() }} />
+            <Button title='Add a color' onPress={() => setColors([randomRGB(), ...colors])} />
+
+            <FlatList
+                keyExtractor={item => item}
+                data={colors}
+                renderItem={({ item }) => {
+                    return (
+                        <View style={{ height: 100, backgroundColor: item }} />
+                    );
+                }} />
+
         </View>
     );
 }
