@@ -20,6 +20,7 @@ const LoginScreen = () => {
                 autoCorrect={false}
                 keyboardType='default'
                 onChangeText={(newValue) => setUsername(newValue)}
+                placeholder='Enter username'
             />
 
             <Text style={{ marginTop: 20, fontSize: 25 }}> Enter Password</Text>
@@ -30,6 +31,7 @@ const LoginScreen = () => {
                 autoCorrect={false}
                 secureTextEntry={true}
                 onChangeText={(newValue) => setPassword(newValue)}
+                placeholder='Enter password'
             />
 
             {
