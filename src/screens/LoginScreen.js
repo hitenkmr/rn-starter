@@ -35,7 +35,7 @@ const LoginScreen = () => {
             />
 
             {
-                isValidPassword(password) ? <Text style={{ marginTop: 10, color: 'green' }}> Valid password</Text> : <Text style={{ marginTop: 10, color: 'red' }}> The password should be atleast 8 chars long</Text>
+                isValidPassword(password) ? null : <Text style={{ marginTop: 10, color: 'red' }}> The password should be atleast 8 chars long</Text>
             }
 
             <View style={{ borderRadius:5, marginTop: 100, backgroundColor: 'rgb(230,32,255)' }} >
