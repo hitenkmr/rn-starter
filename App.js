@@ -12,6 +12,7 @@ import DirectionUsesScreen from "./src/FlexBoxExamples/DirectionUsesScreen";
 import CounterScreen from "./src/screens/CounterScreen";
 import ColorScreen from "./src/screens/ColorScreen";
 import SquareScreen from "./src/screens/SquareScreen";
+import LoginScreen from "./src/screens/LoginScreen";
 
 const navigator = createStackNavigator(
   {
@@ -26,7 +27,8 @@ const navigator = createStackNavigator(
     DirectionUsesScreen: DirectionUsesScreen,
     AppCounterScreen: CounterScreen,
     AppColorScreen: ColorScreen,
-    AppSquareScreen: SquareScreen
+    AppSquareScreen: SquareScreen,
+    AppLoginScreen: LoginScreen
   },
   {
     initialRouteName: "Home",

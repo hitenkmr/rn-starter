@@ -45,6 +45,11 @@ const HomeScreen = ({ navigation }) => {
       style={styles.componentsBtn} color='white'
     />
 
+    <Button title='Login screen' onPress={() => navigation.push('AppLoginScreen')}
+      style={styles.componentsBtn} color='white'
+    />
+
+
   </View>
 
 };
