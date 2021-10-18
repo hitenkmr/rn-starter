@@ -41,7 +41,7 @@ const HomeScreen = ({ navigation }) => {
       style={styles.componentsBtn} color='white'
     />
 
-    <Button title='Square screen' onPress={ () => navigation.push('AppSquareScreen') }
+    <Button title='Square screen' onPress={() => navigation.push('AppSquareScreen')}
       style={styles.componentsBtn} color='white'
     />
 
@@ -49,6 +49,9 @@ const HomeScreen = ({ navigation }) => {
       style={styles.componentsBtn} color='white'
     />
 
+    <Button title='Layout screen' onPress={() => navigation.push('Layout')}
+      style={styles.componentsBtn} color='white'
+    />
 
   </View>
 

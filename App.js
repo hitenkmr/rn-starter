@@ -5,14 +5,15 @@ import ComponentsScreen from "./src/screens/ComponentsScreen";
 import FlatListScreen from "./src/screens/FlatListScreen";
 import SectionListScreen from "./src/screens/SectionListScreen";
 import ImageScreen from "./src/screens/ImageScreen";
-import FlexBoxExamplesScreen from "./src/FlexBoxExamples/FlexBoxExamplesScreen";
-import FlexUsesScreen from "./src/FlexBoxExamples/FlexUsesScreen";
-import FlexDirecionUsagesScreen from "./src/FlexBoxExamples/FlexDirectionUsagesScreen";
-import DirectionUsesScreen from "./src/FlexBoxExamples/DirectionUsesScreen";
+import FlexBoxExamplesScreen from "./src/Screen Layouts/FlexBoxExamples/FlexBoxExamplesScreen";
+import FlexUsesScreen from "./src/Screen Layouts/FlexBoxExamples/FlexUsesScreen";
+import FlexDirecionUsagesScreen from "./src/Screen Layouts/FlexBoxExamples/FlexDirectionUsagesScreen";
+import DirectionUsesScreen from "./src/Screen Layouts/FlexBoxExamples/DirectionUsesScreen";
 import CounterScreen from "./src/screens/CounterScreen";
 import ColorScreen from "./src/screens/ColorScreen";
 import SquareScreen from "./src/screens/SquareScreen";
 import LoginScreen from "./src/screens/LoginScreen";
+import LayoutsScreen from "./src/Screen Layouts/LayoutsScreen";
 
 const navigator = createStackNavigator(
   {
@@ -28,7 +29,8 @@ const navigator = createStackNavigator(
     AppCounterScreen: CounterScreen,
     AppColorScreen: ColorScreen,
     AppSquareScreen: SquareScreen,
-    AppLoginScreen: LoginScreen
+    AppLoginScreen: LoginScreen,
+    Layout: LayoutsScreen
   },
   {
     initialRouteName: "Home",
