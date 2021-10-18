@@ -50,7 +50,13 @@ const LayoutsScreen = () => {
                 <Text style={styles.box7text2Style}> Text2 </Text>
                 <Text style={styles.box7text3Style}> Text3 </Text>
             </View>
-            
+
+            <View style={styles.box8Style}>
+                <View style={styles.box8subbox1Style} />
+                <View style={styles.box8subbox2Style} />
+                <View style={styles.box8subbox3Style} />
+            </View>
+
         </ScrollView>
     );
 };
@@ -189,12 +195,40 @@ const styles = StyleSheet.create({
     box7text2Style: {
         borderWidth: 1,
         borderColor: 'red',
-     },
+    },
 
     box7text3Style: {
         borderWidth: 1,
         borderColor: 'red',
-     },
+    },
+
+    box8Style: {
+        borderWidth: 5,
+        borderColor: 'black',
+        margin: 10,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+
+    box8subbox1Style: {
+        height:50,
+        flex: 1,
+        backgroundColor: 'red',
+    },
+
+    box8subbox2Style: {
+        height:60,
+        flex: 1,
+        backgroundColor: 'green',
+        marginTop:50
+    },
+
+
+    box8subbox3Style: {
+        height:50,
+        flex: 1,
+        backgroundColor: 'yellow'
+    },
 });
 
 export default LayoutsScreen;
